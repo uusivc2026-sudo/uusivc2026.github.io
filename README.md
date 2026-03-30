@@ -1,4 +1,4 @@
-# Universal UltraSound Image Challenge (UUSIC)
+# Universal UltraSound Image & Video Analysis Challenge (UUSIVC)
 
 ## Related links
 - [Challenge Homepage](https://uusivc2026-sudo.github.io/uusivc2026.github.io/)
