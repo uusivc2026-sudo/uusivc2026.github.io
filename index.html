@@ -1,0 +1,570 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>UUSIC: Universal UltraSound Image Challenge</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="DB.png">
+    <link rel="icon" type="image/png" href="DB.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="DB.png" sizes="16x16" />
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/social-share-kit.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="css/etline-font.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body id="top">
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <section class="hero">
+        <section class="navigation">
+            <header>
+                <div class="header-content">
+                    <div class="logo"><a href="#"><img src="img/Deep-Breath-logo-word.png" alt="deep-breath logo"></a></div>
+                    <div class="header-nav">
+                        <nav>
+                            <ul class="primary-nav">
+                                <li><a href="#aim">Aim</a></li>
+                                <li><a href="#task">Task</a></li>
+                                <li><a href="#data">Data</a></li>
+                                <li><a href="#rules">Rules</a></li>
+                                <li><a href="#evaluation">Evaluation</a></li>
+                                <li><a href="#timeline">Timeline</a></li>
+                                <li><a href="#awards">Awards</a></li>
+                                <li><a href="#committee">Committee</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="https://www.codabench.org/competitions/9106/" target="_blank">Participate</a></li>  
+                                <li><a href="https://conferences.miccai.org/2025/en/" target="_blank"><span style="color:red;"><b>MICCAI 2025</b></span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="navicon">
+                        <a class="nav-toggle" href="#"><span></span></a>
+                    </div>
+                </div>
+            </header>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="hero-content text-center">
+                        <h1><span style="color:#FF5274;">U</span>niversal <span style="color:#FF5274;">U</span>ltra<span style="color:#FF5274;">S</span>ound <span style="color:#FF5274;">I</span>mage <span style="color:#FF5274;">C</span>hallenge: Multi-Organ Classification and Segmentation</h1>
+                        <p class="intro">A challenge accepted by MICCAI 2025, 23-27 September, Daejeon, Republic of Korea.  </p>
+                        <a href="https://www.codabench.org/competitions/9106/" target="_blank" class="btn btn-fill btn-large btn-margin-right">Participate</a> <a href="#aim" class="btn btn-accent btn-large">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="down-arrow floating-arrow"><a href="#"><i class="fa fa-angle-down"></i></a></div>
+    </section>
+    
+    <section class="intro section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span data-icon="&#xe041;" class="icon"></span>
+                    </div>
+                    <div class="intro-content">
+                        <h5>Ultrasound Image Analysis</h5>
+                        <p22>Ultrasound imaging is a vital tool in biomedical diagnostics, widely used for organ examination and tumor detection.</p22>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span data-icon="&#xe030;" class="icon"></span>
+                    </div>
+                    <div class="intro-content">
+                        <h5>Generalized Learning</h5>
+                        <p22>Universal models require advanced learning techniques to handle diverse organs and pathologies.</p22>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span data-icon="&#xe046;" class="icon"></span>
+                    </div>
+                    <div class="intro-content last">
+                        <h5>Multi-task Learning</h5>
+                        <p22>Multi-task learning can aid in precise diagnoses and improve clinical outcomes.</p22>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <section class="features section-padding" id="aim">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-6">
+                    <div class="feature-list">
+                        <h3>Aim of the challenge</h3>
+                        <p22>Ultrasound imaging is a vital diagnostic tool, but accurately analyzing images across diverse organs and pathologies remains challenging. Existing methods often lack generalization and are limited to specific tasks.</p22>
+                        <ul class="features-stack">
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <span data-icon="&#xe03e;" class="icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Developing a Universal Model</h5>
+                                    <p22>To design a generalized model capable of handling multiple tasks in ultrasound image analysis, including classification and segmentation across diverse organs and pathologies.</p22>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <span data-icon="&#xe040;" class="icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Advancing Machine Learning Techniques</h5>
+                                    <p22>To explore and implement novel machine learning and image processing methods for extracting meaningful features and achieving accurate predictions.</p22>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <span data-icon="&#xe02b;" class="icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Improving Clinical Outcomes</h5>
+                                    <p22>To enhance diagnostic accuracy and efficiency, potentially reducing invasive procedures and improving patient outcomes through better ultrasound image analysis.</p22>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="device-showcase">
+            <div class="devices">
+                <div class="ipad-wrap wp1"></div>
+                <!--<div class="iphone-wrap wp2"></div>-->
+            </div>
+        </div>
+        <div class="responsive-feature-img"><img src="img/Deep-Breath-logo.png" alt="responsive devices"></div>
+    </section>
+
+
+
+    <script>
+        function downloadFile(url, filename) {
+            var link = document.createElement('a');
+            link.href = url;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+    
+    <section class="intro section-padding" id="task">
+        <div class="container">
+            <div class="row">
+               <div class="col-md-10 col-md-offset-1">
+                <div class="feature-list">
+                    <div class="feature-list">
+                        <h2>Task</h2>
+                        <h5></h5>
+                        <p>Participants are required to submit a Docker image containing a single model capable of performing multi-task processing across multiple organs and diseases. The target organs include the breast, thyroid, liver, kidney, fetal head, heart, and appendix, which correspond to publicly available datasets we collected for redistribution.</p>
+                        <h5>Specifically:</h5>
+                        <li>Breast: BUSI, BUSIS, BUS-BRA datasets (tasks: nodule malignancy classification + nodule segmentation)</li>
+                        <li>Thyroid: DDTI dataset (task: nodule segmentation)</li>
+                        <li>Liver: Fatty-Liver dataset (task: fatty liver classification)</li>
+                        <li>Kidney: KidneyUS dataset (task: kidney contour delineation)</li>
+                        <li>Fetal Head: Fetal HC dataset (task: fetal head contour segmentation)</li>
+                        <li>Cardiac: CAMUS dataset (task: cardiac contour segmentation)</li>
+                        <li>Appendix: Appendix dataset (task: appendicitis classification)</li>
+                        <h5></h5>
+                        <p>Each organ is associated with a distinct clinical task, exemplifying the multi-disease and multi-task nature of the challenge. In addition to the public datasets, we will provide a small portion of our private datasets for training to mitigate domain gap difficulties. The validation and test sets will consist primarily of private data, which will not be publicly disclosed.</p>
+                    </div>
+               </div>
+               
+            </div>
+        </div>
+    </section>
+    
+    <section class="features section-padding" id="data">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="feature-list">
+                        <h2>Data</h2>
+                        <h5></h5>
+                        <p>Our dataset is combined from multiple public datasets and several private datasets for ultrasound imaging. For the public datasets, detailed information about the data-acquiring centers or institutes can be found in the corresponding articles we have listed. Regarding the private data sources, they are from two hospitals: Hangzhou First People's Hospital, and the Netherlands Cancer Institute.</p>
+                        <h5></h5>
+                        <p>Data annotation is overseen by three experts in the field of ultrasound: Dr. Lingyun Bao, Dr. Dong Xu, and Dr. Ritse Mann. They have extensive knowledge and hands-on experience in ultrasound imaging and diagnosis.</p>
+                        <h5></h5>
+                        <h5><strong>References</strong></h5>
+                        <p22>[1] Zehui Lin, Zhuoneng Zhang, Xindi Hu, Zhifan Gao, Xin Yang, Yue Sun, Dong Ni and Tao Tan. "UniUSNet: A Promptable Framework for Universal Ultrasound Disease Prediction and Tissue Segmentation" In 2024 IEEE International Conference on Bioinformatics and Biomedicine (BIBM), IEEE, 2024.</p22>
+                        <br><p22>[2] Tianyu Zhang, Tao Tan, Luyi Han, Linda Appelman, Jeroen Veltman, Ronni Wessels, Katya Duvivier, Claudette Loo, Yuan Gao, Xin Wang, Hugo Horlings, Regina Beets-Tan, Ritse Mann. "Predicting breast cancer types on and beyond molecular level in a multi-modal fashion." NPJ Breast Cancer 9, no. 1 (2023): 16.</p22>
+                        <br><p22>[3] Al-Dhabyani, Walid, Mohammed Gomaa, Hussien Khaled, and Aly Fahmy. "Dataset of breast ultrasound images." Data in brief 28 (2020): 104863.</p22>
+                        <br><p22>[4] Zhang, Yingtao, Min Xian, Heng-Da Cheng, Bryar Shareef, Jianrui Ding, Fei Xu, Kuan Huang, Boyu Zhang, Chunping Ning, and Ying Wang. "BUSIS: a benchmark for breast ultrasound image segmentation." In Healthcare, vol. 10, no. 4, p. 729. MDPI, 2022.</p22>
+                        <br><p22>[5] Gómez-Flores, Wilfrido, Maria Julia Gregorio-Calas, and Wagner Coelho de Albuquerque Pereira. "BUS-BRA: A breast ultrasound dataset for assessing computer-aided diagnosis systems." Medical Physics 51, no. 4 (2024): 3110-3123.</p22>
+                        <br><p22>[6] Byra, Michał, Grzegorz Styczynski, Cezary Szmigielski, Piotr Kalinowski, Łukasz Michałowski, Rafał Paluszkiewicz, Bogna Ziarkiewicz-Wróblewska, Krzysztof Zieniewicz, Piotr Sobieraj, and Andrzej Nowicki. "Transfer learning with deep convolutional neural network for liver steatosis assessment in ultrasound images." International journal of computer assisted radiology and surgery 13 (2018): 1895-1903.</p22>
+                        <br><p22>[7] Singla, Rohit, Cailin Ringstrom, Grace Hu, Victoria Lessoway, Janice Reid, Christopher Nguan, and Robert Rohling. "The open kidney ultrasound data set." In International Workshop on Advances in Simplifying Medical Ultrasound, pp. 155-164. Cham: Springer Nature Switzerland, 2023.</p22>
+                        <br><p22>[8] Pedraza, Lina, Carlos Vargas, Fabián Narváez, Oscar Durán, Emma Muñoz, and Eduardo Romero. "An open access thyroid ultrasound image database." In 10th International symposium on medical information processing and analysis, vol. 9287, pp. 188-193. SPIE, 2015.</p22>
+                        <br><p22>[9] van den Heuvel, Thomas LA, Dagmar de Bruijn, Chris L. de Korte, and Bram van Ginneken. "Automated measurement of fetal head circumference using 2D ultrasound images." PloS one 13, no. 8 (2018): e0200412.</p22>
+                        <br><p22>[10] Leclerc, Sarah, Erik Smistad, Joao Pedrosa, Andreas Østvik, Frederic Cervenansky, Florian Espinosa, Torvald Espeland et al. "Deep learning for segmentation using an open large-scale dataset in 2D echocardiography." IEEE transactions on medical imaging 38, no. 9 (2019): 2198-2210.</p22>
+                        <br><p22>[11] Marcinkevičs, Ričards, Patricia Reis Wolfertstetter, Ugne Klimiene, Ece Özkan Elsen, Kieran Chin-Cheong, Alyssia Paschke, Julia Zerres et al. "Regensburg pediatric appendicitis dataset."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+    <section class="intro section-padding" id="rules">
+        <div class="container">
+            <div class="row">
+               <div class="col-md-10 col-md-offset-1">
+                    <div class="intro-content">
+                        <h2>Rules</h2>
+                        <h5><strong>Methods</strong></h5>
+                        <li>Participants are allowed to base their methods on existing open-source general models. And they are invited to submit a short paper to the <a href="https://deep-breath-miccai.github.io/deepbreath-2025/">Deep-Breath</a> workshop to introduce the details of their methods and declare innovations in areas such as preprocessing, model architecture, or post-processing.</li>
+                        
+                        <h5><strong>Use of other training data/pre-trained models</strong></h5>
+                        <li>No additional data allowed;</li>
+                        <li>The publicly available pre-trained model, such as ResNet50 trained on ImageNet, can be used. To ensure fairness and reproducibility of results, using unpublished pre-trained models is prohibited.</li>
+                        <h5></h5>
+                        <h5><strong>Award Eligibility</strong></h5>
+                        <p>As a condition for being ranked and considered as the challenge winner or eligible for any prize, the teams/participants must fulfil the following obligations:</p>
+                        <li>Present their method at the final event of the challenge at <a href="https://conferences.miccai.org/2025/en/">MICCAI 2025</a>;</li>
+                        <li>Submit a paper to <a href="https://deep-breath-miccai.github.io/deepbreath-2025/">Deep-Breath</a> workshop reporting the details of the methods in a short or long (up to the teams) LNCS format;</li>
+                        <li>Sign and return all prize acceptance documents as may be required by Competition Sponsor/Organizers;</li>
+                        <li>Commit to citing the data challenge paper and the data overview paper whenever submitting the developed method for scientific and non-scientific publications.</li>
+                    </div>
+               </div>
+               
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="features section-padding" id="evaluation">
+        <div class="container">
+            <div class="row">
+               <div class="col-md-10 col-md-offset-1">
+                    <div class="feature-content">
+                        <h2>Evaluation</h2>
+                        <h5></h5>
+                        <p>The algorithm will be assessed using the following metrics, and all metrics will be used to compute the ranking.</p>
+
+                        <h5><strong>Segmentation Metrics</strong></h5>
+                        <li>Dice Similarity Coefficient (DSC): Measures overlap between predicted and ground truth segmentations.</li>
+                        <li>Normalized Surface Dice (NSD): Evaluates boundary accuracy within a tolerance distance.</li>
+
+                        <h5><strong>Classification Metrics</strong></h5>
+                        <li>Area Under Curve (AUC): Assesses classification performance across thresholds.</li>
+                        <li>Accuracy: Proportion of correctly classified instances.</li>
+
+                        <h5><strong>Efficiency Metrics</strong></h5>
+                        <li>Running Time: Inference time for computational efficiency.</li>
+                        <li>Maximum GPU Memory: Peak memory usage during inference.</li>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="features-extra dates section-padding" id="timeline">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="feature-list">
+                        <h2>Timeline</h2>
+                        <ul>
+                          <!-- <li><span>Dec 3, 2023</span> Website up</li> -->
+                          <li><span>June 20, 2025</span> Website opens for registration, release training and validation images.</li>
+                          <li><span>June 25, 2025</span> Submission system opens for validation.</li>
+                          <li><span>Aug. 15, 2025</span> Short paper and docker submission deadline.</li>
+                          <li><span>Aug. 16, 2025</span> Submission system for testing.</li>
+                          <li><span>Sept. 23, 2025</span> Release final results during the MICCAI annual meeting.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section class="features section-padding" id="awards">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="feature-list">
+                        <h2>Awards</h2>
+                        <ul>
+                          <!-- <li><span>Dec 3, 2023</span> Website up</li> -->
+                          <li>We will provide a prize of 32,000 CNY for the Top 10 teams.
+                                <ul>
+                                <li>1st Place: 10,000 CNY</li>
+                                <li>2nd-3rd Place: 6,000 CNY</li>
+                                <li>4th-6th Place: 2,000 CNY</li>
+                                <li>7th-10th Place: 1,000 CNY</li>
+                                </ul>
+                            </li>
+                          <li>Top-10 teams will be invited to present talks and winning certificates will be provided.</li>
+                          <li>The challenge organizers aim to publish a summary paper in a relevant journal. The top ten performing teams will be invited to as co-authors. Participants can submit their own paper after submitting the summary paper or once the challenge paper is published on Arxiv.</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="features section-padding" id="photos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="feature-list" >
+    
+                            <h2>UUSIC 2025 Results</h2>
+                            <a href="img/photo2025/result.png" target="_blank"><img src="img/photo2025/result.png" width="610px" style="padding:5px;"></a>
+                            <br/>
+                            <a href="img/photo2025/top1.jpg" target="_blank"><img src="img/photo2025/top1.jpg" width="200px" style="padding:5px;"></a> 
+                            <a href="img/photo2025/top2.jpg" target="_blank"><img src="img/photo2025/top2.jpg" width="200px" style="padding:5px;"></a>
+                            <a href="img/photo2025/top3.jpg" target="_blank"><img src="img/photo2025/top3.jpg" width="200px" style="padding:5px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+    <section class="intro section-padding" id="committee">
+        <h3> </h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="feature-list">
+                        <h2>UUSIC Committee</h2>
+                        <h3 id="organizing"> Organizing Committee </h3>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://scholar.google.com/citations?hl=zh-CN&user=ng2FNGEAAAAJ" target="_blank"><img src="img/people-Zehui.png"></a></div>
+                                <div class="committee-text"><h4><a href="https://scholar.google.com/citations?hl=zh-CN&user=ng2FNGEAAAAJ" target="_blank">Zehui Lin</a></h4> 
+                                Faculty of Applied Sciences, Macao Polytechnic University, Macao, China </div></div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://fiy2w.github.io/" target="_blank"><img src="img/people-Luyi.jpg"></a></div>
+                                <div class="committee-text"><h4><a href="https://fiy2w.github.io/" target="_blank">Luyi Han</a></h4> 
+                                Radiology Department/BIG, NKI/RadboudUMC, Amsterdam/Nijmegen, the Netherlands </div></div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://tianyu-zhang0319.github.io/" target="_blank"><img src="img/people-Tianyu.jpg"></a></div>
+                                <div class="committee-text"><h4><a href="https://tianyu-zhang0319.github.io/" target="_blank">Tianyu Zhang</a></h4> 
+                                Radiology Department/BIG, NKI/RadboudUMC, Amsterdam/Nijmegen, the Netherlands </div></div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://scholar.google.com/citations?user=83YbCHQAAAAJ&hl=zh-CN" target="_blank"><img src="img/people-Xin.jpg"></a></div>
+                                <div class="committee-text"><h4><a href="https://scholar.google.com/citations?user=83YbCHQAAAAJ&hl=zh-CN" target="_blank">Xing Wang</a></h4> 
+                                Radiology Department/BIG, NKI/RadboudUMC, Amsterdam/Nijmegen, the Netherlands </div></div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://scholar.google.com/citations?hl=zh-CN&user=6WNtJa0AAAAJ" target="_blank"><img src="img/people-Shuo.jpg"></a></div>
+                                <div class="committee-text"><h4><a href="https://scholar.google.com/citations?hl=zh-CN&user=6WNtJa0AAAAJ" target="_blank">Shuo Li</a></h4> 
+                                School of Biomedical Engineering, Case Western Reserve University, Cleveland, USA </div></div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://www.aimi.pitt.edu/people/shandong-wu-phd" target="_blank"><img src="img/people-Shandong.jpg"></a></div>
+                                <div class="committee-text"><h4><a href="https://www.aimi.pitt.edu/people/shandong-wu-phd" target="_blank">Shandong Wu</a></h4> 
+                                Department of Radiology, University of Pittsburgh, Pittsburgh, USA </div></div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://scholar.google.com/" target="_blank"><img src="img/people-NiDong.jpg"></a></div>
+                                <div class="committee-text"><h4><a href="https://scholar.google.com/" target="_blank">Dong Ni</a></h4> 
+                                School of Biomedical Engineering, Shenzhen University, China </div></div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://scholar.google.com/" target="_blank"><img src="img/people-XuDong.png"></a></div>
+                                <div class="committee-text"><h4><a href="https://scholar.google.com/" target="_blank">Dong Xu (Co-chair)</a></h4> 
+                                    Department of Diagnostic Ultrasound Imaging & Interventional Therapy, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Hangzhou, China </div></div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://scholar.google.com/citations?user=lLg3WRkAAAAJ&hl=zh-CN" target="_blank"><img src="img/people-Tao.jpg"></a></div>
+                                <div class="committee-text"><h4><a href="https://scholar.google.com/citations?user=lLg3WRkAAAAJ&hl=zh-CN" target="_blank">Tao Tan (Chair)</a></h4> 
+                                Faculty of Applied Sciences, Macao Polytechnic University, Macao, China </div></div>
+                               
+
+                        <div class="clearfix"></div>
+                        <br>
+                        <h3 id="advisory"> Technical Committee </h3>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://www.linkedin.com/in/dr-oliver-lester-saldanha-871155154" target="_blank"><img src="img/people-Oliver.jpg"></a></div>
+                                <div class="committee-text"><h4><a href="https://www.linkedin.com/in/dr-oliver-lester-saldanha-871155154" target="_blank">Oliver Lester Saldanha</a></h4> 
+                                NCT in Uniklinik Heidelberg and EKFZ in TU Dresden, Dresden, Saxony, Germany</div></div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://www.nki.nl/research/find-a-researcher/researchers/stefano-trebeschi/" target="_blank"><img src="img/people-stefano-trebeschi.jpg"></a></div>
+                                <div class="committee-text"><h4><a href="https://www.nki.nl/research/find-a-researcher/researchers/stefano-trebeschi/" target="_blank">Stefano Trebeschi</a></h4> 
+                                Radiology Department, Netherlands Cancer Institute <br> GROW Graduate School, Maastricht University, Netherlands</div></div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://scholar.google.com/citations?user=rT_U18MAAAAJ&hl=en" target="_blank"><img src="img/people-ehsan.jpg"></a></div>
+                                <div class="committee-text"><h4><a href="https://scholar.google.com/citations?user=rT_U18MAAAAJ&hl=en" target="_blank">Ehsan Kozegar</a></h4> 
+                                Faculty of Technology and Engineering-East of Guilan, University of Guilan, Rudsar, Guilan, Iran</div></div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://scholar.google.com/citations?user=4myVXIkAAAAJ&hl=en&oi=ao" target="_blank"><img src="img/people-dengqiang.jpg"></a></div>
+                                <div class="committee-text"><h4><a href="https://scholar.google.com/citations?user=4myVXIkAAAAJ&hl=en&oi=ao" target="_blank">Dengqiang Jia</a></h4> 
+                                City University of Hong Kong, Hong Kong, China</div></div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://scholar.google.com/citations?user=_-S26d8AAAAJ&hl=en&oi=ao" target="_blank"><img src="img/people-yapeng.jpg"></a></div>
+                                <div class="committee-text"><h4><a href="https://scholar.google.com/citations?user=_-S26d8AAAAJ&hl=en&oi=ao" target="_blank">Yapeng Wang</a></h4> 
+                                Faculty of Applied Sciences, Macao Polytechnic University, Macao, China</div></div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://scholar.google.de/citations?user=22MFHWsAAAAJ&hl=de&oi=ao" target="_blank"><img src="img/people-gustav.jpg"></a></div>
+                                <div class="committee-text"><h4><a href="https://scholar.google.de/citations?user=22MFHWsAAAAJ&hl=de&oi=ao" target="_blank">Gustav Müller-Franzes</a></h4> 
+                                Department of Diagnostic and Interventional Radiology, University Hospital RWTH Aachen, Aachen, Germany </div></div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://www.nki.nl/research/find-a-researcher/researchers/behdad-dasht-bozorg/" target="_blank"><img src="img/people-dehdad.jpg"></a></div>
+                                <div class="committee-text"><h4><a href="https://www.nki.nl/research/find-a-researcher/researchers/behdad-dasht-bozorg/" target="_blank">Behdad Dasht Bozorg</a></h4> 
+                                Image-Guided Surgery, Department of Surgery, NKI, Amsterdam, the Netherlands </div></div>
+                      
+                        <div class="clearfix"></div>
+                        <br>
+                        <h3 id="advisory"> Clinical Committee </h3>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://scholar.google.com/" target="_blank"><img src="img/people-LingyunBao.jpg"></a></div>
+                                <div class="committee-text"><h4><a href="https://scholar.google.com/" target="_blank">Lingyun Bao</a></h4> 
+                                Affiliated Hangzhou First People's Hospital, Zhejiang University School of Medicine, Hangzhou, China </div></div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://scholar.google.com/" target="_blank"><img src="img/people-Jieyun.png"></a></div>
+                                <div class="committee-text"><h4><a href="https://scholar.google.com/" target="_blank">Jieyun Bai</a></h4> 
+                                Jinan University, China </div></div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://scholar.google.com/" target="_blank"><img src="img/people-YingZhou.jpg"></a></div>
+                                <div class="committee-text"><h4><a href="https://scholar.google.com/" target="_blank">Ying Zhou</a></h4> 
+                                Faculty of Applied Sciences, Macao Polytechnic University, Macao, China <br>Department of Surgery, Hebei Provincial Hospital of Traditional Chinese Medicine, Shijiazhuang, China </div></div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://scholar.google.com/" target="_blank"><img src="img/people-YanmingZhang.jpg"></a></div>
+                                <div class="committee-text"><h4><a href="https://scholar.google.com/" target="_blank">Yanming Zhang</a></h4> 
+                                Faculty of Applied Sciences, Macao Polytechnic University, Macao, China </div></div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 committee-member">
+                                <div class="committee-portrait"><a href="https://scholar.google.com/citations?user=vPwW_6EAAAAJ&hl=zh-CN" target="_blank"><img src="img/people-Ritse.jpg"></a></div>
+                                <div class="committee-text"><h4><a href="https://scholar.google.com/citations?user=vPwW_6EAAAAJ&hl=zh-CN" target="_blank">Ritse Mann</a></h4> 
+                                Radiology Department/BIG, NKI/RadboudUMC, Amsterdam/Nijmegen, the Netherlands </div></div>
+                      
+                      
+
+                        <!-- <p> Coming soon... </p> -->
+
+                    <div class="clearfix"></div>
+                    <br>
+                    <h3 id="contact"> Contact </h3>
+                    <p> Please contact us for further questions and comments via email at <a href="mailto:uusic2025@gmail.com"> uusic2025@gmail.com</a></p> <!-- or <a href="mailto:Tianyu.Zhang@radboudumc.nl"> Tianyu.Zhang@radboudumc.nl</a>-->
+                    </div>
+                    <div class="feature-list">
+                        <a href="https://www.mpu.edu.mo/en/index.php" target="_blank"><img src="img/MacaoPolytechnicUniversity.png" height="50px"></a>
+                        <a > &nbsp; &nbsp; </a>
+                        <a href="https://www.radboudumc.nl/en/patient-care" target="_blank"><img src="img/Radboudumc_logo.png" height="50px"></a>
+                        <a > &nbsp; &nbsp; </a>
+                        <a href="https://www.nki.nl/" target="_blank"><img src="img/nki.png" height="50px"></a>
+                        <a > &nbsp; &nbsp; </a>
+                        <a href="https://case.edu/" target="_blank"><img src="img/Case-Western-Reserve-University-Seal.jpg" height="65px"></a>
+                        <a > &nbsp; &nbsp; </a>
+                        <a href="https://www.pitt.edu/" target="_blank"><img src="img/University_of_Pittsburgh.png" height="65px"></a>
+                        <a > &nbsp; &nbsp; </a>
+                        <a href="https://www.szu.edu.cn/" target="_blank"><img src="img/ShenzhenUniversity.png" height="65px"></a>
+                        <a > &nbsp; &nbsp; </a>
+                        <a href="https://www.maastrichtuniversity.nl/" target="_blank"><img src="img/MU.png" height="45px"></a>
+                        <a > &nbsp; &nbsp; </a>
+                        <a href="https://www.hbszyy.cn/" target="_blank"><img src="img/hbm.png" height="45px"></a>
+                        
+                    </div>
+                    <!-- <h3>Related Projects </h3>
+                    <div class="feature-list">   
+                        <a href="https://big.inaanbouw.dev/news/the-safe-mri-project-is-approved" target="_blank"><img src="img/Safe_MRI.jpg" height="60px"></a>
+                        <a > &nbsp; &nbsp; &nbsp;</a>
+                        <a href="https://odelia.ai/" target="_blank"><img src="img/ODELIA.png" height="60px"></a> -->
+
+                    <h3> </h3>
+
+                    <h3>Sponsors </h3>
+                    <div class="feature-list">  
+                        <a > &nbsp; &nbsp; &nbsp;</a>
+                        <a href="https://scholar.google.com/citations?user=vPwW_6EAAAAJ&hl=zh-CN" target="_blank"><img src="img/big.png" height="60px"></a>
+                        <a > &nbsp; &nbsp; &nbsp;</a>
+                        <a href="https://odelia.ai/" target="_blank"><img src="img/ODELIA.png" height="60px"></a>
+                        <a > &nbsp; &nbsp; &nbsp;</a>
+                        <a href="https://www.fdct.gov.mo/en/" target="_blank"><img src="img/fdct.png" height="60px"></a>
+                        <h3> </h3>   
+                    </div>
+                    
+                    <h3> </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+                        
+
+
+    <section class="to-top">
+        <div class="container">
+            <div class="row">
+                <div  class="col-md-12 text-center">  <!-- <div class="feature-list">  -->
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://uusic.github.io/" class="ssk ssk-facebook ssk-lg"></a>
+                    <a href="https://twitter.com/intent/tweet?text=https://uusic.github.io/" class="ssk ssk-twitter ssk-lg"></a>
+                    <a href="https://www.linkedin.com/cws/share?url=https://uusic.github.io/" class="ssk ssk-linkedin ssk-lg"></a>
+                </div>
+            </div>        
+        </div>
+    </section>
+
+
+    
+    <footer>
+        <div class="container">
+            <div class="row">    <!-- style="height:150px; padding:10px 0; margin:0;" -->     <!--  -->
+
+                  <div class="footer-links"> <!-- style="height:100px; padding:0; margin:0;" -->
+                    <ul class="footer-group">                            
+                            <li><a href="#aim">Aim</a></li>
+                            <li><a href="#task">Task</a></li>
+                            <li><a href="#data">Data</a></li>
+                            <li><a href="#rules">Rules</a></li>
+                            <li><a href="#evaluation">Evaluation</a></li>
+                            <li><a href="#timeline">Timeline</a></li>
+                            <li><a href="#awards">Awards</a></li>
+                            <li><a href="#committee">Committee</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="https://www.codabench.org/competitions/9106/" target="_blank">Participate</a></li>            
+                    </ul>
+                  <p> <span data-icon="&#xe018;" class="icon"></span> <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> <span id="busuanzi_container_site_pv"> &nbsp Visitors: <span id="busuanzi_value_site_pv"></span> </span> <span id="busuanzi_container_site_uv">/ <span id="busuanzi_value_site_uv"></span></span> <span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </span> <span data-icon="&#xe04b;" class="icon"> &nbsp </span>   Website: <a href="https://fiy2w.github.io/" taget="_blank">Luyi Han </a> using <a href="https://tympanus.net/codrops/2015/08/11/freebie-sedna-one-page-website-template/">Sedna</a> template. |                         <a href="http://tympanus.net/codrops/licensing/">Licence</a> | Crafted with <span data-icon="&#xe04a;" class="icon"></span> for <a href="https://tympanus.net/codrops/">Codrops</a>.</p>
+                  </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="bower_components/retina.js/dist/retina.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="bower_components/classie/classie.js"></script>
+    <script src="bower_components/jquery-waypoints/lib/jquery.waypoints.min.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+</body>
+</html>
