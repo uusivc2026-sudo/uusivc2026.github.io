@@ -340,16 +340,21 @@ Ultrasound</h1>
                         <div class="feature-list" >
     
                             <h2>UUSIVC 2026 Results</h2>
-                            <p style="max-width: 900px; line-height: 1.6;">
-                                The final score is jointly determined by <b>performance</b> and <b>efficiency</b>.
-                                The performance score is calculated as the average score across the five tasks:
-                                Image Segmentation, CEUS Segmentation, Video Segmentation, Image Classification,
-                                and CEUS Classification.
-                                The efficiency score considers both inference time and peak GPU memory usage,
-                                using our baseline model (<b>467.626 s</b> inference time and <b>2114 MiB</b> GPU memory)
-                                as the reference.
-                                The final score is calculated using a weighting of
-                                <b>70% performance</b> and <b>30% efficiency</b>.
+                            <p style="max-width: 950px; line-height: 1.6; text-align: justify;">
+                                The final evaluation of UUSIVC 2026 was conducted by running all submitted Docker containers under the same standardized hardware and software environment.
+                                The final score consists of two components: <b>performance</b> and <b>efficiency</b>.
+    
+                                For performance evaluation, segmentation tasks were assessed using Dice and NSD, while classification tasks were assessed using AUC and accuracy.
+                                Within each task, different datasets were weighted according to the number of test samples, and the five challenge tasks
+                                (Image Segmentation, CEUS Segmentation, Video Segmentation, Image Classification, and CEUS Classification)
+                                were equally weighted to obtain the overall performance score.
+    
+                                For efficiency evaluation, both inference time and peak GPU memory usage were considered with equal weight.
+                                The official baseline, with an inference time of <b>467.626 s</b> and peak GPU memory usage of <b>2114 MiB</b>,
+                                corresponds to an efficiency score of <b>70</b>.
+                                Models requiring fewer computational resources than the baseline receive an efficiency reward, while models requiring more resources receive a corresponding penalty.
+    
+                                The final ranking score is calculated by combining <b>70% performance</b> and <b>30% efficiency</b>.
                             </p>
                             <a href="img/photo2025/result.png" target="_blank"><img src="img/photo2025/result.png" width="610px" style="padding:5px;"></a>
                             <br/>
